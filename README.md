@@ -4,7 +4,7 @@ Website: https://storybook.js.org
 # Step 1: Add dependencies
 ## Add @storybook/react
 Add ``` @storybook/react ``` to your project. To do that, run:
-```bash
+```js
 npm install @storybook/react --save-dev
 npm install @storybook/addon-info --save-dev
 ```
