@@ -58,3 +58,5 @@ Button
   ├── with text
   └── with emoji
 ```
+## Finally: Run your Storybook
+`npm run storybook`
