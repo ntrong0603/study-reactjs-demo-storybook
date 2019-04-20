@@ -37,3 +37,24 @@ function loadStories() {
 
 configure(loadStories, module);
 ```
+## Step 4: Write your stories
+Now create a `../stories/index.js` file, and write your first story like this:
+```bash
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Button } from '@storybook/react/demo';
+
+storiesOf('Button', module)
+  .add('with text', () => (
+    <Button>Hello Button</Button>
+  ))
+  .add('with emoji', () => (
+    <Button><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
+  ));  
+```
+Each story is a single state of your component. In the above case, there are two stories for the demo button component:
+```bash
+Button
+  ├── with text
+  └── with emoji
+```
