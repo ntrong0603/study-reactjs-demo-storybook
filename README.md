@@ -16,7 +16,7 @@ npm install babel-loader @babel/core --save-dev
 ```
 # Step 2: Add a npm script
 Then add the following NPM script to your `package.json` in order to start the storybook later in this guide:
-```bash
+```js
 {
   "scripts": {
     "storybook": "start-storybook"
@@ -27,7 +27,7 @@ Then add the following NPM script to your `package.json` in order to start the s
 For a basic Storybook configuration, the only thing you need to do is tell Storybook where to find stories.
 
 To do that, create a file at `.storybook/config.js` with the following content:
-```bash
+```js
 import { configure } from '@storybook/react';
 
 function loadStories() {
@@ -39,7 +39,7 @@ configure(loadStories, module);
 ```
 ## Step 4: Write your stories
 Now create a `../stories/index.js` file, and write your first story like this:
-```bash
+```js
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Button } from '@storybook/react/demo';
