@@ -16,7 +16,7 @@ npm install babel-loader @babel/core --save-dev
 ```
 # Step 2: Add a npm script
 Then add the following NPM script to your `package.json` in order to start the storybook later in this guide:
-```js
+```json
 {
   "scripts": {
     "storybook": "start-storybook"
